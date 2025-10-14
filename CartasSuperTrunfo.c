@@ -88,7 +88,7 @@ int main()
 
   // Área para exibição dos dados da cidade
   // carta 1
-  printf("\n-----CARTA 1-------\n");
+  /*printf("\n-----CARTA 1-------\n");
   printf("Estado: %s\n", estado);
   printf("Codigo: %s\n", codigo);
   printf("Nome da Cidade: %s\n", cidade);
@@ -111,7 +111,7 @@ int main()
   printf("Numeros de pontos turisticos: %d\n", pontost2);
   printf("Desidade Populacional: %.2f hab/km²\n", DensidadePopulacional2);
   printf("PIB per Capita: %.2f Reais\n", pibpercapita2);
-  printf("O Super poder é: %.8f ", superPoder2);
+  printf("O Super poder é: %.8f ", superPoder2);*/
 
   superPoder1 = (float)(populacao + area + pib + pibpercapita + DensidadePopulacional + pontost);
   superPoder2 = (float)(populacao2 + area2 + pib2 + pibpercapita2 + DensidadePopulacional2 + pontost2);
@@ -125,8 +125,7 @@ int main()
   printf("PIB per Capita: %d \n", pibpercapita > pibpercapita2);
   printf("Super Poder: %d \n", superPoder1 > superPoder2);*/
 
-
-  if (populacao > populacao2)
+  /*if (populacao > populacao2)
     printf("A População da carta 1 Venceu \n");
   else
     printf("A População da carta 2 venceu \n");
@@ -159,9 +158,145 @@ int main()
   if (superPoder1 > superPoder2)
     printf("O superPoder da carta 1 Venceu \n");
   else
-    printf("O superPoder da carta 2 venceu \n");
+    printf("O superPoder da carta 2 venceu \n");*/
 
+  int atributo;
+  printf("Escolha um atributo para uma batalha \n");
+  printf(" 1 - População \n");
+  printf(" 2 - Área \n");
+  printf(" 3 - PIB \n");
+  printf(" 4 - Pontos Turisticos \n");
+  printf(" 5 - Densidade Populacional \n");
+  printf(" 6 - Pib Per Capta \n");
+  printf(" 7 - Super poder \n");
+  scanf("%d", &atributo);
 
+  switch (atributo)
+  {
+  case 1:
+    if (populacao > populacao2)
+    {
+      printf("Nome os dois estados: %s e %s \n", estado, estado2);
+      printf("Atributo usado na comparação : %d \n", atributo);
+      printf("Valores de cada carta : %d e %d \n ", populacao, populacao2);
+      printf("A carta 1 Ganhou");
+    }
+    else if (populacao == populacao2)
+    {
+      printf("Tivemos um empate\n");
+    }
+    else
+    {
+      printf("A carta 2 Ganhou\n");
+    }
+    break;
 
-  return 0;
+  case 2:
+    if (area > area2)
+    {
+      printf("Nome os dois estados: %s e %s \n", estado, estado2);
+      printf("Atributo usado na comparação : %d \n", atributo);
+      printf("Valores de cada carta : %d e %d \n ", area, area2);
+      printf("A carta 1 Ganhou");
+    }
+    else if (area == area2)
+    {
+      printf("Tivemos um empate\n");
+    }
+    else
+    {
+      printf("A carta 2 Ganhou\n");
+    }
+    break;
+
+  case 3:
+    if (pib > pib2)
+    {
+      printf("Nome os dois estados: %s e %s \n", estado, estado2);
+      printf("Atributo usado na comparação : %d \n", atributo);
+      printf("Valores de cada carta : %f e %f \n ", pib, pib2);
+      printf("A carta 1 Ganhou");
+    }
+    else if (pib == pib2)
+    {
+      printf("Tivemos um empate\n");
+    }
+    else
+    {
+      printf("A carta 2 Ganhou\n");
+    }
+    break;
+
+  case 4:
+    if (pontost > pontost2)
+    {
+      printf("Nome os dois estados: %s e %s \n", estado, estado2);
+      printf("Atributo usado na comparação : %d \n", atributo);
+      printf("Valores de cada carta : %d e %d \n ", pontost, pontost2);
+      printf("A carta 1 Ganhou");
+    }
+    else if (pontost == pontost2)
+    {
+      printf("Tivemos um empate\n");
+    }
+    else
+    {
+      printf("A carta 2 Ganhou\n");
+    }
+    break;
+
+  case 5:
+    if (DensidadePopulacional < DensidadePopulacional2)
+    {
+      printf("Nome os dois estados: %s e %s \n", estado, estado2);
+      printf("Atributo usado na comparação : %d \n", atributo);
+      printf("Valores de cada carta : %f e %f \n ", DensidadePopulacional, DensidadePopulacional2);
+      printf("A carta 1 Ganhou");
+    }
+    else if (DensidadePopulacional == DensidadePopulacional2)
+    {
+      printf("Tivemos um empate\n");
+    }
+    else
+    {
+      printf("A carta 2 Ganhou\n");
+    }
+    break;
+
+  case 6:
+    if (pibpercapita > pibpercapita2)
+    {
+      printf("Nome os dois estados: %s e %s \n", estado, estado2);
+      printf("Atributo usado na comparação : %d \n", atributo);
+      printf("Valores de cada carta : %f e %f \n ", pibpercapita, pibpercapita2);
+      printf("A carta 1 Ganhou");
+    }
+    else if (pibpercapita == pibpercapita2)
+    {
+      printf("Tivemos um empate\n");
+    }
+    else
+    {
+      printf("A carta 2 Ganhou\n");
+    }
+    break;
+
+  case 7:
+    if (superPoder1 > superPoder2)
+    {
+      printf("Nome os dois estados: %s e %s \n", estado, estado2);
+      printf("Atributo usado na comparação : %d \n", atributo);
+      printf("Valores de cada carta : %f e %f \n ", superPoder1, superPoder2);
+      printf("A carta 1 Ganhou");
+    }
+    else if (superPoder1 == superPoder2)
+    {
+      printf("Tivemos um empate\n");
+    }
+    else
+    {
+      printf("A carta 2 Ganhou\n");
+    }
+    break;
+  }
 }
