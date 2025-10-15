@@ -103,7 +103,6 @@ int main()
     printf("E. Densidade Populacional: \n");
     printf("F. Pib percapta: \n");
     printf("G. Super Poderes: \n");
-    printf("\n");
 
     printf("Escolha qual quer comparar : \n");
     scanf("%c", &primeitoatr);
