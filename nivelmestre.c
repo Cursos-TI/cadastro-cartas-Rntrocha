@@ -105,43 +105,43 @@ int main()
     printf("G. Super Poderes: \n");
 
     printf("Escolha qual quer comparar : \n");
-    scanf("%c", &primeitoatr);
+    scanf(" %c", &primeitoatr);
 
     switch (primeitoatr)
     {
     case 'A':
     case 'a':
-        printf("Você escolher a opção ÁREA : \n");
+        printf("Você escolheu a opção ÁREA : \n");
         resultado1 = area > area2 ? 1 : 0; // se a área 1 for maior que área 2, 1 para verdadeiro e 0 para falso
         break;
     case 'B':
     case 'b':
-        printf("Você escolher a opção PIB : \n");
+        printf("Você escolheu a opção PIB : \n");
         resultado1 = pib > pib2 ? 1 : 0;
         break;
     case 'C':
     case 'c':
-        printf("Você escolher a opção PONTOS TURISTICOS : \n");
+        printf("Você escolheu a opção PONTOS TURISTICOS : \n");
         resultado1 = pontost > pontost2 ? 1 : 0;
         break;
     case 'D':
     case 'd':
-        printf("Você escolher a opção POPULAÇÃO : \n");
+        printf("Você escolheu a opção POPULAÇÃO : \n");
         resultado1 = populacao > populacao2 ? 1 : 0;
         break;
     case 'E':
     case 'e':
-        printf("Você escolher a opção DENSIDADE POPULACIONAL : \n");
+        printf("Você escolheu a opção DENSIDADE POPULACIONAL : \n");
         resultado1 = DensidadePopulacional < DensidadePopulacional2 ? 1 : 0;
         break;
     case 'F':
     case 'f':
-        printf("Você escolher a opção PIB PERCAPTA : \n");
+        printf("Você escolheu a opção PIB PERCAPTA : \n");
         resultado1 = pibpercapita > pibpercapita2 ? 1 : 0;
         break;
     case 'G':
     case 'g':
-        printf("Você escolher a opção SUPER PODERES : \n");
+        printf("Você escolheu a opção SUPER PODERES : \n");
         resultado1 = superPoder1 > superPoder2 ? 1 : 0;
         break;
 
@@ -149,6 +149,7 @@ int main()
         printf("Opção inválida !!! \n");
         break;
     }
+
 
     printf("Escolha o Segundo atributo: \n");
     printf("Atenção : Você deve escolher um atributo diferente do Primeiro . \n");
@@ -159,10 +160,10 @@ int main()
     printf("E. Densidade Populacional: \n");
     printf("F. Pib percapta: \n");
     printf("G. Super Poderes: \n");
-    printf("\n");
+    
 
     printf("Escolha qual quer comparar : \n");
-    scanf("%c", &segundoatr);
+    scanf(" %c", &segundoatr);
 
     if (primeitoatr == segundoatr)
         printf("Você escolheu o mesmo atributo, escolha outro da próxima vez! \n ");
@@ -171,37 +172,37 @@ int main()
         {
         case 'A':
         case 'a':
-            printf("Você escolher a opção ÁREA : \n");
+            printf("Você escolheu a opção ÁREA : \n");
             resultado2 = area > area2 ? 1 : 0;
             break;
         case 'B':
         case 'b':
-            printf("Você escolher a opção PIB : \n");
+            printf("Você escolheu a opção PIB : \n");
             resultado2 = pib > pib2 ? 1 : 0;
             break;
         case 'C':
         case 'c':
-            printf("Você escolher a opção PONTOS TURISTICOS : \n");
+            printf("Você escolheu a opção PONTOS TURISTICOS : \n");
             resultado2 = pontost > pontost2 ? 1 : 0;
             break;
         case 'D':
         case 'd':
-            printf("Você escolher a opção POPULAÇÃO : \n");
+            printf("Você escolheu a opção POPULAÇÃO : \n");
             resultado2 = populacao > populacao2 ? 1 : 0;
             break;
         case 'E':
         case 'e':
-            printf("Você escolher a opção DENSIDADE POPULACIONAL : \n");
+            printf("Você escolheu a opção DENSIDADE POPULACIONAL : \n");
             resultado2 = DensidadePopulacional < DensidadePopulacional2 ? 1 : 0;
             break;
         case 'F':
         case 'f':
-            printf("Você escolher a opção PIB PERCAPTA : \n");
+            printf("Você escolheu a opção PIB PERCAPTA : \n");
             resultado2 = pibpercapita > pibpercapita2 ? 1 : 0;
             break;
         case 'G':
         case 'g':
-            printf("Você escolher a opção SUPER PODERES : \n");
+            printf("Você escolheu a opção SUPER PODERES : \n");
             resultado2 = superPoder1 > superPoder2 ? 1 : 0;
             break;
 
@@ -210,12 +211,12 @@ int main()
             break;
         }
 
-        if (resultado1 && resultado2)
-            printf("Parabéns, você ganhou ! \n");
-        else if (resultado1 != resultado2)
-            printf("Empatou \n");
-        else
-            printf("Infelizmente você perdeu ! \n");
+    if (resultado1 && resultado2)
+        printf("Parabéns, você ganhou ! \n");
+    else if (resultado1 != resultado2)
+        printf("Empatou \n");
+    else
+        printf("Infelizmente você perdeu ! \n");
 
     return 0;
 }
